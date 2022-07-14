@@ -9,11 +9,15 @@ setup(
     
 
     # Define the library name, this is what is used along with `pip install`.
-    name='ot',
+    name='optimal',
     
-    packages = ['ot'],
+#     packages = ['ot'],
 
-    package_dir = {'ot': 'ot'},
+#     package_dir = {'ot': 'ot'},
+    
+    packages=find_namespace_packages(where='ot'),
+    
+    package_dir={"": "ot"}
 
     # Define the author of the repository.
     author='Akshay Raman',
