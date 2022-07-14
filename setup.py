@@ -34,8 +34,7 @@ setup(
 
     # Here is the URL where you can find the code, in this case on GitHub.
     url='https://github.com/ramanakshay/Optimal-Transport',
-
-    package_dir = {'Optimal-Transporot': 'ot'}
+    
 
     # These are the dependencies the library needs in order to run.
     install_requires=[
@@ -47,9 +46,14 @@ setup(
     keywords='optimal transport, OT, DFT',
 
     # here are the packages I want "build."
-    packages=find_namespace_packages(
-        where=['ot', 'ot.*']
-    ),
+#     packages=find_namespace_packages(
+#         where=['ot', 'ot.*']
+#     ),
+    
+    packages = ['Optimal-Transport'],
+
+    package_dir = {'Optimal-Transport': 'ot'},
+
 
     # # here we specify any package data.
     # package_data={
