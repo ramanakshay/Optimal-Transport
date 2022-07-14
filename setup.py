@@ -7,9 +7,9 @@ with open(file="README.md", mode="r") as readme_handle:
 
 setup(
     
-    name='optimal-transport',
-    packages = ['otdft'],
-    package_dir = {'otdft': 'ot'},
+    name='utils',
+    packages = ['utils'],
+    package_dir = {'utils': 'utils'},
     
     author='Akshay Raman',
 
