@@ -9,15 +9,15 @@ setup(
     
 
     # Define the library name, this is what is used along with `pip install`.
-    name='optimal',
+    name='optimal-transport',
     
-#     packages = ['ot'],
+    packages = ['otdft'],
 
-#     package_dir = {'ot': 'ot'},
+    package_dir = {'': 'ot'},
     
-    packages=find_namespace_packages(where='ot'),
+#     packages=find_namespace_packages(where='ot'),
     
-    package_dir={"": "ot"},
+#     package_dir={"": "ot"},
 
     # Define the author of the repository.
     author='Akshay Raman',
