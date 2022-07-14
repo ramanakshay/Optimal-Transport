@@ -9,7 +9,11 @@ setup(
     
 
     # Define the library name, this is what is used along with `pip install`.
-    name='optimal-transport',
+    name='ot',
+    
+    packages = ['ot'],
+
+    package_dir = {'ot': 'ot'},
 
     # Define the author of the repository.
     author='Akshay Raman',
@@ -34,8 +38,7 @@ setup(
 
     # Here is the URL where you can find the code, in this case on GitHub.
     url='https://github.com/ramanakshay/Optimal-Transport',
-
-    package_dir = {'Optimal-Transporot': 'ot-dft'}
+    
 
     # These are the dependencies the library needs in order to run.
     install_requires=[
@@ -47,9 +50,9 @@ setup(
     keywords='optimal transport, OT, DFT',
 
     # here are the packages I want "build."
-    packages=find_namespace_packages(
-        where=['ot', 'ot.*']
-    ),
+#     packages=find_namespace_packages(
+#         where=['ot', 'ot.*']
+#     ),
 
     # # here we specify any package data.
     # package_data={
