@@ -9,7 +9,11 @@ setup(
     
 
     # Define the library name, this is what is used along with `pip install`.
-    name='optimal-transport',
+    name='OptimalTransport',
+    
+    packages = ['OptimalTransport'],
+
+    package_dir = {'OptimalTransport': 'ot'},
 
     # Define the author of the repository.
     author='Akshay Raman',
@@ -49,11 +53,6 @@ setup(
 #     packages=find_namespace_packages(
 #         where=['ot', 'ot.*']
 #     ),
-    
-    packages = ['Optimal-Transport'],
-
-    package_dir = {'Optimal-Transport': 'ot'},
-
 
     # # here we specify any package data.
     # package_data={
