@@ -35,7 +35,7 @@ setup(
     # Here is the URL where you can find the code, in this case on GitHub.
     url='https://github.com/ramanakshay/Optimal-Transport',
 
-    package_dir = {'Optimal-Transporot': 'ot'}
+    package_dir = {'Optimal-Transporot': 'ot-dft'}
 
     # These are the dependencies the library needs in order to run.
     install_requires=[
