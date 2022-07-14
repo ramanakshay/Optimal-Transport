@@ -9,7 +9,7 @@ setup(
     
 
     # Define the library name, this is what is used along with `pip install`.
-    name='otdft',
+    name='optimal-transport',
     
     packages = ['otdft'],
 
