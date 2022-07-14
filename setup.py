@@ -17,7 +17,7 @@ setup(
     
     packages=find_namespace_packages(where='ot'),
     
-    package_dir={"optimal": "ot"},
+    package_dir={"": "ot"},
 
     # Define the author of the repository.
     author='Akshay Raman',
