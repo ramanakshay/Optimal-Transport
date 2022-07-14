@@ -46,9 +46,11 @@ setup(
     keywords='optimal transport, OT, DFT',
 
     # here are the packages I want "build."
-    packages=find_namespace_packages(
-        where=['ot', 'ot.*']
-    ),
+#     packages=find_namespace_packages(
+#         where=['ot', 'ot.*']
+#     ),
+    
+    packages = ['Optimal-Transport'],
 
     package_dir = {'Optimal-Transport': 'ot'},
 
