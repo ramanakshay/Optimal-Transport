@@ -50,6 +50,8 @@ setup(
         where=['ot', 'ot.*']
     ),
 
+    package_dir = {'Optimal-Transport': 'ot'},
+
 
     # # here we specify any package data.
     # package_data={
