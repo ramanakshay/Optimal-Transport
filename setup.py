@@ -9,11 +9,11 @@ setup(
     
 
     # Define the library name, this is what is used along with `pip install`.
-    name='otdft',
+    name='optimal-transport',
     
     packages = ['otdft'],
 
-    package_dir = {'': 'ot'},
+    package_dir = {'otdft': 'ot'},
     
 #     packages=find_namespace_packages(where='ot'),
     
