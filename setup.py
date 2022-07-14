@@ -11,7 +11,7 @@ setup(
     # Define the library name, this is what is used along with `pip install`.
     name='ot',
     
-    packages = ['ot],
+    packages = ['ot'],
 
     package_dir = {'ot': 'ot'},
 
