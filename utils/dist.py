@@ -2,6 +2,12 @@ import numpy as np
 
 # Distances
 
+  metrics = {'x':x,'y':y,\
+             'euclidean':euclidean,\
+             'euclidean_sq':euclidean_sq,\
+             'ln_metric':ln_metric,\
+             'coulomb': coulomb }
+
 def ln_metric(x,y,n):
   return pow(np.sum(pow(abs(x-y),n),axis = len(x.shape)-1),1/n)
 
@@ -11,19 +17,13 @@ def euclidean(x,y):
 def euclidean_sq(x,y):
   return np.sum(pow(abs(x-y),2),axis = len(x.shape)-1)
 
-def coulomb(x,y,shift):
+def coulomb(x,y,shift = 1e-5):
   x = x.astype(float)
   y = y.astype(float)
   return pow(shift + np.sum(pow(abs(x-y),2),axis = len(x.shape)-1),-1)
 
 def calculate_distance(x,y,dist):
-  metrics = {'x':x,'y':y,\
-             'euclidean':euclidean,\
-             'euclidean_sq':euclidean_sq,\
-             'ln_metric':ln_metric,\
-             'coulomb': coulomb }
   return eval(dist[0]+'(x,y,'+str(dist[1:])[1:],metrics)
-
 
 # Cost Matrix
 
