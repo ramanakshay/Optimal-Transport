@@ -16,7 +16,7 @@ def euclidean_sq(x,y):
 def coulomb(x,y,shift = 1e-5):
   x = x.astype(float)
   y = y.astype(float)
-  return pow(shift + euclidean(x,y),-2)
+  return pow(shift + ln_metric(x,y,1),-1)
 
 # -----------------------------------------------------------------------------
 
