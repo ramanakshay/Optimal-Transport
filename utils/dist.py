@@ -2,7 +2,7 @@ import numpy as np
 
 # Distances
 
-  metrics = {'x':x,'y':y,\
+metrics = {'x':x,'y':y,\
              'euclidean':euclidean,\
              'euclidean_sq':euclidean_sq,\
              'ln_metric':ln_metric,\
