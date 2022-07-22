@@ -49,3 +49,14 @@ def find_cost_matrix(xa,xb,p,dist = ("euclidean",)):
   xa_ = np.tile(xa, (1,xa.shape[0])).reshape(xa.shape[0],xb.shape[0],xa.shape[1])
   xb_ = np.tile(xb, (xb.shape[0],1)).reshape(xa.shape[0],xb.shape[0],xb.shape[1])
   return pow(calculate_distance(xa_,xb_,dist),p)
+
+def find_cost_tensor(n,X,p = 1,dist = (coulomb,1)):
+  C = np.zeros((size,)*n)
+  for i in range(n):
+    for j in range(n):
+      if i < j:
+        shape = [1]*n
+        shape[i] = shape[j] = size
+        shape = tuple(shape)
+        C += find_cost_matrix(X[i].reshape(size,1),X[j].reshape(size,1),p,dist).reshape(shape)
+  return C
