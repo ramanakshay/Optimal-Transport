@@ -1,3 +1,5 @@
+import numpy as np
+
 def gaussian_mix(size,mu,std,scale = None):
   assert len(mu) == len(std)
   if scale == None:
@@ -19,3 +21,4 @@ def lorentzian(size):
   x = np.arange(size, dtype = np.float64)
   h = 2/(np.pi*(1+pow((x-size/2)*0.05,2)))
   return h / h.sum()
+  
